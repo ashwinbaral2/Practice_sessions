@@ -7,7 +7,9 @@
 # Assign any values you want and print the dictionary.
 # ----------------------------------------------
 # Your code here:
-
+student = {"name": "John", "age": 21, "city": "New York"}
+print(student)
+# Output: {'name': 'John', 'age': 21, 'city': 'New York'}
 
 # Q2 (Level 2)
 # You are given:
