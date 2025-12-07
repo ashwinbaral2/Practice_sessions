@@ -7,8 +7,14 @@ last = nums[-1]
 print("First element:", first)
 print("Last element:", last)
 
-
-
+first = nums[0]
+second = nums[1]
+third = nums[2]
+last = nums[-1]
+print("first element:", first)
+print("last element:", last)
+print("second element:", second)
+print("third element:", third)
 # Output:
 # First element: 10
 # Last element: 40
@@ -25,6 +31,9 @@ print("Length of list:", length)
 # Q3: Print each item in the list on a new line
 
 items = ["apple", "banana", "cherry"]
+print (items[0])
+print (items[1])
+print (items[2])
 
 print(items[0])
 print(items[1])
