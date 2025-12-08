@@ -1,2 +1,2 @@
 # git1
-first project
+This repository contains collaborated practice sessions with basics of python programming.
