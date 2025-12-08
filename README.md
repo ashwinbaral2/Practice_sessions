@@ -1,2 +1,2 @@
 # python
-This repository contains collaborated practice sessions with basics of python programming.
+This repository contains collaborated practice sessions on basics of python programming.
