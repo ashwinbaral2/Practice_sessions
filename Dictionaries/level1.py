@@ -17,8 +17,21 @@ print(student)
 boy = {"Name": "Ali", "Age": 20, "City": "Peshawar"}
 # Update Ali's age to 22 using BOTH direct assignment and update()
 # Then print the dictionary.
-# ----------------------------------------------
+# ---------------------y---o------b----------------
 # Your code here:
+
+boy["City"]= "Kathmandu"
+print(boy)
+
+boy.update({"City": "Kathmandu"})
+print(boy)
+
+
+boy["Age"]=22
+print(boy)
+
+boy.update({"Age":23})
+print(boy)
 
 
 # Q3 (Level 3)
@@ -29,8 +42,14 @@ boy = {"Name": "Ali", "Age": 21, "Weight": 68}
 # ----------------------------------------------
 # Your code here:
 
+boy["Religion"]="Muslim"
+print(boy)
+print(boy.keys())
+print(boy.values())
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
 
 # Q4 (Level 4)
+
 # Given:
 boy = {"Name": "Ali", "Age": 21, "City": "Peshawar"}
 # Safely access the value of "Height" using get().
@@ -38,14 +57,29 @@ boy = {"Name": "Ali", "Age": 21, "City": "Peshawar"}
 # Print the result.
 # ----------------------------------------------
 # Your code here:
+result=boy.get("Name")
+print(result)
 
+result=boy.get("Age")
+print(result)
 
+result=boy.get("City")
+print(result)
+
+result=boy.get("Height","not available")
+print(result)
+
+result=boy.get("Height","6 feet")
+print(result)
 # Q5 (Level 5)
 # A dictionary cannot have duplicate keys.
 # Create a dictionary with two 'City' keys and print the final output.
 # Explain in a comment WHY the output appears the way it does.
 # ----------------------------------------------
 # Your code here:
+
+boy = {"Name": "Ali", "Age": 21, "City": "Peshawar", "City":" Kathmandu"}
+print(boy)
 
 
 # Q6 (Level 6)
@@ -55,7 +89,25 @@ boy = {"Name": "Ali", "Age": 21, "Weight": 68, "City": "Peshawar"}
 # ----------------------------------------------
 # Your code here:
 
+# result=boy.popitem()
+# print(boy)
 
+# result=boy.popitem()
+# print(result)
+
+# result=boy.popitem()
+# print(boy)
+
+# result=boy.popitem()
+# print(boy)
+
+# result=boy.popitem()
+# print(boy)
+result=boy.popitem()
+print(boy)
+
+# result=boy.popitem()
+# print(boy)
 # Q7 (Level 7)
 # Copy the following dictionary WITHOUT linking it to the original:
 boy = {"Name": "Ali", "Age": 21, "City": "Peshawar"}
@@ -64,6 +116,11 @@ boy = {"Name": "Ali", "Age": 21, "City": "Peshawar"}
 # ----------------------------------------------
 # Your code here:
 
+boy_copy=boy.copy()
+print(boy_copy)
+
+boy_copy["Name"]="Aswin"
+print(boy_copy)
 
 # Q8 (Level 8)
 # Create a nested dictionary called boys:
@@ -75,7 +132,10 @@ boy = {"Name": "Ali", "Age": 21, "City": "Peshawar"}
 # ----------------------------------------------
 # Your code here:
 
+boys={"boy1":{"Name": "Ali", "Age": 23},"boy2":{"Name": "Ahmad","Age":21},"boy3":{"Name": "Abas","Age":22}}
 
+result={boys["boy3"] ["Name"]}
+print(result)
 # Q9 (Level 9)
 # Given this nested dictionary:
 boys = {
