@@ -5,6 +5,7 @@
 
 
 
+
 # 2. Given two numbers a and b, print their average.
 
 
@@ -24,3 +25,4 @@
 
 
 # 5. Using a loop, print all even numbers from 1 to 20.
+
