@@ -9,6 +9,13 @@
 # Your code here:
 student = {"name": "John", "age": 21, "city": "New York"}
 print(student)
+print(student["name"])
+student["name"] = "Aswin"
+print(student)
+
+student.update({"Name": "Barsha"})
+print(student)
+
 # Output: {'name': 'John', 'age': 21, 'city': 'New York'}
 
 
@@ -20,19 +27,29 @@ boy = {"Name": "Ali", "Age": 20, "City": "Peshawar"}
 # ---------------------y---o------b----------------
 # Your code here:
 
-boy["City"]= "Kathmandu"
+boy.update({"Age": 22})
 print(boy)
 
-boy.update({"City": "Kathmandu"})
+boy.update({"Name": "Asu"})
+print(boy)
+
+boy["City"] = "Bhaktapur"
 print(boy)
 
 
-boy["Age"]=22
+boy.update({"City": "Sindhuli"})
 print(boy)
 
-boy.update({"Age":23})
-print(boy)
+Scooter = {"Name": "Snowy", "Age": 7, "Colour": "White"}
 
+Scooter.update({"Brand": "Dio", "Cost": "One lakh"})
+print(Scooter)
+
+Scooter["Owner"] = "Barsha and Aswin"
+print(Scooter)
+
+print(Scooter.keys())
+print(Scooter.values())
 
 # Q3 (Level 3)
 # Given this dictionary:
@@ -42,12 +59,18 @@ boy = {"Name": "Ali", "Age": 21, "Weight": 68}
 # ----------------------------------------------
 # Your code here:
 
-boy["Religion"]="Muslim"
+boy["Religion"] = "Muslim"
 print(boy)
+
+boy.update({"Religion": "Hindu"})
+print(boy)\
+
 print(boy.keys())
 print(boy.values())
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
 
+
+print(boy.keys())
+print(boy.values())
 # Q4 (Level 4)
 
 # Given:
@@ -57,20 +80,12 @@ boy = {"Name": "Ali", "Age": 21, "City": "Peshawar"}
 # Print the result.
 # ----------------------------------------------
 # Your code here:
-result=boy.get("Name")
-print(result)
+print(boy.get("Height", "not available"))
 
-result=boy.get("Age")
-print(result)
+print(boy.get("Salary", "Aaaaaaaachi khaau Aswin"))
 
-result=boy.get("City")
-print(result)
+print(boy.get("Age"))
 
-result=boy.get("Height","not available")
-print(result)
-
-result=boy.get("Height","6 feet")
-print(result)
 # Q5 (Level 5)
 # A dictionary cannot have duplicate keys.
 # Create a dictionary with two 'City' keys and print the final output.
@@ -78,9 +93,9 @@ print(result)
 # ----------------------------------------------
 # Your code here:
 
-boy = {"Name": "Ali", "Age": 21, "City": "Peshawar", "City":" Kathmandu"}
-print(boy)
+boy = {"Name": "Ali", "Age": 21, "City": "Peshawar", "City": " Kathmandu"}
 
+print(boy)
 
 # Q6 (Level 6)
 # Given:
@@ -88,11 +103,14 @@ boy = {"Name": "Ali", "Age": 21, "Weight": 68, "City": "Peshawar"}
 # Remove the last inserted item using popitem() and print the dictionary.
 # ----------------------------------------------
 # Your code here:
+print(boy.popitem())
+result = boy.popitem()
+print(boy)
 
 # result=boy.popitem()
 # print(boy)
 
-# result=boy.popitem()
+# result =boy.popitem()
 # print(result)
 
 # result=boy.popitem()
@@ -103,8 +121,7 @@ boy = {"Name": "Ali", "Age": 21, "Weight": 68, "City": "Peshawar"}
 
 # result=boy.popitem()
 # print(boy)
-result=boy.popitem()
-print(boy)
+
 
 # result=boy.popitem()
 # print(boy)
@@ -115,12 +132,13 @@ boy = {"Name": "Ali", "Age": 21, "City": "Peshawar"}
 # Confirm the original dictionary is unchanged.
 # ----------------------------------------------
 # Your code here:
+girl = boy.copy()
+print(girl)
+girl["Name"] = "Barsha"
+girl.update({"Age": 31, "Height": 5.3, "Weight(Kg)": 60})
+print(girl)
+print(boy)
 
-boy_copy=boy.copy()
-print(boy_copy)
-
-boy_copy["Name"]="Aswin"
-print(boy_copy)
 
 # Q8 (Level 8)
 # Create a nested dictionary called boys:
@@ -132,10 +150,15 @@ print(boy_copy)
 # ----------------------------------------------
 # Your code here:
 
-boys={"boy1":{"Name": "Ali", "Age": 23},"boy2":{"Name": "Ahmad","Age":21},"boy3":{"Name": "Abas","Age":22}}
 
-result={boys["boy3"] ["Name"]}
-print(result)
+offsprings = {
+    "offspring1": {"Name": "Barsha", "Age": 31},
+    "offspring2": {"Name": "Sarad", "Age": 29},
+    "offspring3": {"Name": "Bidhya", "Age": 27}
+}
+print(offsprings)
+
+
 # Q9 (Level 9)
 # Given this nested dictionary:
 boys = {
@@ -162,4 +185,3 @@ boys_details = {
 # Abas weighs 72 kg
 # ----------------------------------------------
 # Your code here:
-
