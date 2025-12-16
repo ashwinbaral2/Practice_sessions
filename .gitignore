@@ -140,4 +140,4 @@ vite.config.ts.timestamp-*
 #personal files
 Dictionaries/test.py
 
-
+.vscode
