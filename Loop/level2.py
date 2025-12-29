@@ -7,6 +7,7 @@
 # ==============================
 
 
+
 # Q1.
 # Write a program that prints the following pattern:
 # *
